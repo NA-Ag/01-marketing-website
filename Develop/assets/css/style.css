@@ -1,4 +1,5 @@
-/*Universal selector will affect all HTML elements on the page.*/
+/*Universal selector will affect all HTML elements on the page.
+  box attrributes affect layout visualization.*/
 * {
     box-sizing: border-box;
     padding: 0;
@@ -10,7 +11,8 @@ body {
     background-color: #d9dcd6;
 }
 
-/*HTML elements within the header class will be affected. HTML class is targeted.*/
+/*HTML elements within the header class will be affected. HTML class is targeted.
+  Attributes affect appearence of text and colour scheme.*/
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -18,18 +20,19 @@ body {
     color: #ffffff;
 }
 
-/*Grouping selector of h1 tags within the header class. This selects all elements with the same style definitions.*/
+/*Grouping selector of h1 tags within the header class. This selects all elements with the same style definitions.
+  Attributes affect visual representation of h1 elements.*/
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-/**/
+/*Grouping selector of h1 tags within header class, also adding changes in colour to seo class.*/
 .header h1 .seo {
     color: #d9dcd6;
 }
 
-/**/
+/*Header class, div container has attributes modified by following code.*/
 .header div {
     padding-top: 15px;
     margin-right: 20px;
@@ -38,29 +41,29 @@ body {
     font-size: 20px;
 }
 
-/**/
+/*Header class div container unlisted elements has no list marker.*/
 .header div ul {
     list-style-type: none;
 }
 
-/**/
+/*Header class div container unlisted item, listed item formatting.*/
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
-/**/
+/*Anchor tag holds hyperlink reference, attributes change how the text for the link will be displayed */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
-/**/
+/*Text written in paragraph tags will be in this font size.*/
 p {
     font-size: 16px;
 }
 
-/**/
+/*Hero class will be affected by the following attributes.*/
 .hero {
     height: 800px;
     width: 100%;
@@ -70,26 +73,26 @@ p {
     background-position: center;
 }
 
-/**/
+/*Image location left side.*/
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
-/**/
+/*Image location right side*/
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
-/**/
+/*Class display features.*/
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-/**/
+/*Class display features.*/
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -101,65 +104,27 @@ p {
     background-color: #2589bd;
 }
 
-/**/
-.benefit-lead {
+/*grouped classes that will have the same attributes.*/
+.benefit-lead, .benefit-brand, .benefit-cost  {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-/**/
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-/**/
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-/**/
-.benefit-lead h3 {
+/*grouped classes with their respective header tags, that will have the same attributes.*/
+.benefit-lead h3, .benefit-brand h3, .benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-/**/
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-/**/
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-/**/
-.benefit-lead img {
+/*grouped classes with their respective img tags, that will have the same attributes.*/
+.benefit-lead img, .benefit-brand img, .benefit-cost img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-/**/
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-/**/
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-/**/
-.search-engine-optimization {
+/*Grouped classes that will have the same attributes.*/
+.search-engine-optimization, .online-reputation-management, .social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -168,60 +133,18 @@ p {
     color: #ffffff;
 }
 
-/**/
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-/**/
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-/**/
-.search-engine-optimization img {
+/*grouped classes with their respective img tags, that will have the same attributes.*/
+.search-engine-optimization img, .online-reputation-management img, .social-media-marketing img {
     max-height: 200px;
 }
 
-/**/
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-/**/
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-/**/
-.search-engine-optimization h2 {
+/*Grouped classes with their respective h2 tags, that will have the same attributes.*/
+.search-engine-optimization h2, .online-reputation-management h2, .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-/**/
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-/**/
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-/**/
+/*Bottom of the page layout*/
 .footer {
     padding: 30px;
     clear: both;
@@ -229,7 +152,7 @@ p {
     text-align: center;
 }
 
-/**/
+/*footer class h2 tag text size.*/
 .footer h2 {
     font-size: 20px;
 }
