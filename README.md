@@ -1,4 +1,4 @@
-# 01-assignment-marketing-website
+# 01-marketing-website
 First assignment, site for marketing agency. 
 
 Repository holds files for a single stylized website for a marketing agency. 
